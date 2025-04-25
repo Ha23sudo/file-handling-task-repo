@@ -15,6 +15,9 @@ pass
 
 def task2_read_file():
     # TODO: Read the contents of a file and print them to the console.
+    f = open(r"C:\\Users\\hp\\OneDrive\\Desktop\\4th Semester\\Python\\GIT with File handling.txt", 'r')
+    print(f.read())
+    f.close()
     pass
 
 def task3_append_file():
@@ -48,4 +51,4 @@ def task9_write_csv():
 def task10_json_file():
     # TODO: Create a JSON file from a Python dictionary and read it back.
     pass
-task1_create_file()
+#add functions here properly for a menu based program
