@@ -75,3 +75,5 @@ def task10_json_file():
     with open('example.json', 'r') as json_file:
         loaded_data = json.load(json_file)
         print(loaded_data)
+
+        
