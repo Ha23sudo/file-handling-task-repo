@@ -1,0 +1,6 @@
+import file_handling_tasks
+file_handling_tasks.task1_create_file()
+file_handling_tasks.task2_read_file()
+file_handling_tasks.task3_append_file()
+file_handling_tasks.task4_count_lines()
+file_handling_tasks.task5_find_word()
