@@ -75,10 +75,22 @@ def task8_read_csv():
     # TODO: Read a CSV file and print each row.
     import csv
     file=open("file.txt",'r')
+    values=csv.reader(file)
+    for i in values:
+        print(i)
     pass
 
 def task9_write_csv():
     # TODO: Write a list of dictionaries to a CSV file.
+    data =[
+        {'Fruit':'Lychee','Color':'White'},{'Fruit':'Orange','Color':'Orange'}
+    ]
+    file=open("file.csv.txt",'w')
+    file.write("Fruit,Color\n")
+    for i in data:
+        line=f"{i['Fruit']},{i['Color']}\n"
+        file.write(line)
+    file.close()    
     pass
 
 def task10_json_file():
@@ -92,3 +104,5 @@ def task10_json_file():
 #task5_find_word()
 #task6_copy_file()
 #task7_replace_word()
+#task8_read_csv()
+task9_write_csv()
