@@ -1,2 +1,2 @@
-Hello, people!
+Hello, World!
 How are you people

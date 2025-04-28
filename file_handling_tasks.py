@@ -59,11 +59,22 @@ def task6_copy_file():
 def task7_replace_word():
     # TODO: Replace a specific word in the file with another word.
     file=open("file.txt",'r')
-     
+    line=file.read()
+    w=input("Enter a word to replace ")
+    newword=input("Enter new word ")
+    count=line.count(w)
+    if count==0:
+        print("Word not found")
+    else:
+        update=line.replace(w,newword)
+        file=open("file.txt",'w')
+        file.write(update)        
     pass
 
 def task8_read_csv():
     # TODO: Read a CSV file and print each row.
+    import csv
+    file=open("file.txt",'r')
     pass
 
 def task9_write_csv():
@@ -80,3 +91,4 @@ def task10_json_file():
 #task4_count_lines()
 #task5_find_word()
 #task6_copy_file()
+#task7_replace_word()
