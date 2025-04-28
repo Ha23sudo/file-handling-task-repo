@@ -1,44 +1,51 @@
-# file_handling_tasks.py
-
-# This file includes placeholders for file handling tasks.
-# Students should complete each function according to the instructions.
-
 def task1_create_file():
-    # TODO: Create a new text file and write "Hello, world!" to it.
-    pass
+    # Create a new text file and write "Hello, world!" to it
+    with open('hello.txt', 'w') as file:
+        file.write('Hello, world!')
 
 def task2_read_file():
-    # TODO: Read the contents of a file and print them to the console.
-    pass
+    # Read and print the contents of a file
+    with open('hello.txt', 'r') as file:
+        print(file.read())
 
 def task3_append_file():
-    # TODO: Append a new line of text to an existing file.
-    pass
+    # Append a new line of text to an existing file
+    with open('hello.txt', 'a') as file:
+        file.write('\nAppended line.')
 
 def task4_count_lines():
-    # TODO: Count and print the number of lines in a file.
-    pass
+    # Count and print the number of lines in a file
+    with open('hello.txt', 'r') as file:
+        lines = file.readlines()
+        print(f"Number of lines: {len(lines)}")
 
 def task5_find_word():
-    # TODO: Find whether a specific word exists in the file and how many times.
-    pass
+    # Find if a specific word exists and count its occurrences
+    word_to_find = 'Hello'
+    with open('hello.txt', 'r') as file:
+        content = file.read()
+        count = content.count(word_to_find)
+        print(f"'{word_to_find}' found {count} times.")
 
 def task6_copy_file():
-    # TODO: Copy the contents of one file to another.
-    pass
+    # Copy contents from one file to another
+    with open('hello.txt', 'r') as src, open('copy_hello.txt', 'w') as dest:
+        dest.write(src.read())
 
 def task7_replace_word():
-    # TODO: Replace a specific word in the file with another word.
-    pass
+    # Replace a word in the file and save changes
+    with open('hello.txt', 'r') as file:
+        content = file.read()
+    new_content = content.replace('Hello', 'Hi')
+    with open('hello.txt', 'w') as file:
+        file.write(new_content)
+task1_create_file()
+task2_read_file()
+task3_append_file()
+task2_read_file()  # to see the appended content
+task4_count_lines()
+task5_find_word()
+task6_copy_file()
+task7_replace_word()
+task2_read_file()  # to see the replaced content
 
-def task8_read_csv():
-    # TODO: Read a CSV file and print each row.
-    pass
-
-def task9_write_csv():
-    # TODO: Write a list of dictionaries to a CSV file.
-    pass
-
-def task10_json_file():
-    # TODO: Create a JSON file from a Python dictionary and read it back.
-    pass
