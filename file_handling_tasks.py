@@ -3,6 +3,8 @@
 # This file includes placeholders for file handling tasks.
 # Students should complete each function according to the instructions.
 
+print frasat
+
 def task1_create_file():
     # TODO: Create a new text file and write "Hello, world!" to it.
      file=open("file.txt",'w')
